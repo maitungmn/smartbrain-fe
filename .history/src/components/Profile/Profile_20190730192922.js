@@ -1,0 +1,47 @@
+import React from "react";
+import "./Profile.css";
+
+const Profile = ({ isProfileOpen, toggleModal }) => {
+  return (
+    <div className="profile-modal">
+      <article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center bg-white">
+        <main className="pa4 black-80 w-80">
+          <img
+            src="http://tachyons.io/img/logo.jpg"
+            className="h3 w3 dib"
+            alt="avatar"
+          />
+          <h1>John Doe</h1>
+          <h4>Images Submitted: 5</h4>
+          <p>Member since: January</p>
+          <hr />
+          <div className="measure">
+            <input
+              className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+              type="text"
+              name="name"
+              id="name"
+              onChange={this.onNameChange}
+            />
+            <input
+              className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+              type="email"
+              name="email-address"
+              id="email-address"
+              onChange={this.onEmailChange}
+            />
+            <input
+              className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+              type="password"
+              name="password"
+              id="password"
+              onChange={this.onPasswordChange}
+            />
+          </div>
+        </main>
+      </article>
+    </div>
+  );
+};
+
+export default Profile;

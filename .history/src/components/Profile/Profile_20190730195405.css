@@ -15,8 +15,3 @@
   font-style: bold;
   cursor: pointer;
 }
-
-.modal-close:hover {
-  color: grey;
-  cursor: pointer;
-}

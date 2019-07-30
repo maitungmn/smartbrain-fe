@@ -32,12 +32,12 @@ class Profile extends React.Component {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ formInput: data })
-    })
-      .then(resp => {
-        this.props.toggleModal();
-        this.props.loadUser({ ...this.props.user, ...data });
-      })
-      .catch(console.log);
+        .then(resp => {
+          this.props.toggleModal();
+          this.props.loadUser({ ...this.props.user, ...data });
+        })
+        .catch(console.log)
+    });
   };
 
   render() {
